@@ -1,0 +1,169 @@
+body {
+    background-image: url(https://www.grupodigital.eu/blog/wp-content/uploads/2019/11/gamer-decorative-illustration-flat-design_23-2148250394-e1574340136197.jpg);
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    opacity: 0.9;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: #f5f6f7;
+    font-size: 18px; /* Tamaño de fuente base para el cuerpo */
+    font-family: Tahoma;
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+    overflow-y: auto; /* Muestra la barra de desplazamiento vertical si es necesario */
+}
+
+fieldset {
+    border: none;
+}
+
+.container {
+    width: 90%;
+    background-color: #1b1b32;
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 600px; /* Máximo ancho para el contenedor */
+    text-align: center;
+    font-size: 18px; /* Tamaño de fuente para el contenedor */
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Estilos para las etiquetas de "Name", "Email" y "Age" */
+label[for="name-label"],
+label[for="email-label"],
+label[for="number-label"] {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Estilos para los campos de entrada de "Name", "Email" y "Age" */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para cuando el campo de entrada está enfocado */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+#dropdown {
+    width: calc(100% - 20px); /* Ajusta el ancho del dropdown */
+    padding: 10px 40px 10px 15px; /* Ajusta el padding para aumentar el tamaño vertical y horizontalmente */
+    margin-bottom: 20px;
+    font-size: 18px; /* Ajusta el tamaño de la fuente para hacerla más grande */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* Cambia el color de fondo */
+    appearance: none; /* Elimina los estilos predeterminados del sistema */
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Agrega un ícono como flecha */
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Ajusta la posición del ícono de flecha */
+    background-size: 28px; /* Ajusta el tamaño del ícono de flecha */
+}
+
+#dropdown:focus {
+    outline: none; /* Elimina el contorno al enfocar el elemento */
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+}
+
+#survey-form label[for="definitely-option"],
+#survey-form label[for="maybe-option"],
+#survey-form label[for="not-sure-option"] {
+    display: block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#survey-form input[type="radio"]:checked + label {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: #fff;
+}
+
+#referrer {
+    width: calc(100% - 20px); /* Ajusta el ancho del dropdown */
+    padding: 10px 40px 10px 15px; /* Ajusta el padding para aumentar el tamaño vertical y horizontalmente */
+    margin-bottom: 20px;
+    font-size: 18px; /* Ajusta el tamaño de la fuente para hacerla más grande */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff; /* Cambia el color de fondo */
+    appearance: none; /* Elimina los estilos predeterminados del sistema */
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Agrega un ícono como flecha */
+    background-repeat: no-repeat;
+    background-position: right 15px center; /* Ajusta la posición del ícono de flecha */
+    background-size: 28px; /* Ajusta el tamaño del ícono de flecha */
+}
+
+#referrer:focus {
+    outline: none; /* Elimina el contorno al enfocar el elemento */
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+}
+
+/* Estilos para las casillas de verificación */
+#survey-form fieldset:nth-of-type(5) input[type="checkbox"] {
+    display: none; /* Oculta las casillas de verificación */ 
+}
+
+#survey-form fieldset:nth-of-type(5) label {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos cuando las casillas de verificación están seleccionadas */
+#survey-form fieldset:nth-of-type(5) input[type="checkbox"]:checked + label {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos para el campo de texto de comentarios */
+#bio {
+    width: calc(100% - 20px); /* Ajusta el ancho del campo de texto */
+    padding: 10px;
+    margin-bottom: 10%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#bio:focus {
+    outline: none; /* Elimina el contorno al enfocar el campo */
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 60%;
+    margin-top: 5px;
+}
+/* Estilos al pasar el cursor sobre el botón */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
